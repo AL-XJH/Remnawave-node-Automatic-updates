@@ -26,6 +26,6 @@ systemctl restart cron
 echo "----------------------------------------"
 echo "✅ 独立更新脚本已生成: /root/do_update.sh"
 echo "✅ 自动更新定时任务已成功配置！"
-echo "🕒 这台机器的更新时间被随机分配在: 每天北京时间 04:${RAND_MIN}"
+printf "🕒 这台机器的更新时间被随机分配在: 每天北京时间 04:%02d\n" "$RAND_MIN"
 echo "📄 日志文件: /root/remnawave_update.log"
 echo "----------------------------------------"
